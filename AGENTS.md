@@ -1,46 +1,28 @@
 # AGENTS.md
 
-These instructions apply to this repository.
+These instructions apply to the Codex Engineering Starter Kit repository.
 
-## Development Rules
+## How Codex Should Work Here
 
-1. Develop new features in a modular manner when possible.
-2. Maintain all functional changes in `development log.md`.
-3. Treat repository files as the source of truth. Do not rely on chat history for durable system behavior.
-4. Keep the central system separate from any real project it bootstraps.
-5. Prefer Markdown templates, explicit workflows, and small validation scripts over custom infrastructure.
+- Inspect the repository before editing.
+- Keep the kit lightweight and understandable.
+- Prefer simple Markdown and small scripts over frameworks.
+- Avoid adding infrastructure without clear evidence.
+- Do not turn this kit into a multi-agent platform, runtime, workflow engine, database, or project management app.
+- Maintain clear terminology: project foundation, task contract, task review.
+- Run relevant checks before declaring completion.
+- Report assumptions and unverified work.
+- Do not add new rules based on one isolated incident.
+- Maintain functional changes in `development log.md`.
 
-## Codex Operating Rules
+## Approval Required
 
-When working in this repository, Codex should:
+Ask before:
 
-- inspect the current repository state before editing;
-- keep changes scoped to the requested task;
-- update `development log.md` for every functional change;
-- preserve terminology from `SYSTEM_CHARTER.md`;
-- avoid building runtime orchestration unless a task contract explicitly approves it;
-- produce verification evidence before claiming completion.
-
-## Approval Boundaries
-
-Codex must stop and request approval before:
-
-- changing the system charter or autonomy policy in a material way;
-- adding a major dependency;
-- creating a web app, service, database, or multi-agent runtime;
-- bootstrapping a real product project;
-- widening the task scope beyond the approved contract;
-- changing stable templates in a way that breaks existing projects.
-
-## Standard Task Shape
-
-For non-trivial work, use:
-
-1. Repository inspection.
-2. Assumptions.
-3. Implementation plan.
-4. Scoped edits.
-5. Verification.
-6. Development log update.
-7. Summary of changed files and unresolved decisions.
+- adding a dependency;
+- adding scripts or automation;
+- changing the three-workflow structure;
+- introducing a new Skill;
+- deleting user-created project material;
+- expanding the kit beyond project start, task start, and task review.
 
