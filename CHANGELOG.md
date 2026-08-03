@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0 - 2026-08-03
+
+- Added project-adapted `grill-me`, `grill-with-docs`, and `to-spec` as optional requirement-entry skills.
+- Made both grill skills self-contained instead of depending on separately installed `grilling` or `domain-modeling` skills.
+- Adapted `to-spec` to create local project-definition drafts or task contracts instead of requiring an issue tracker.
+- Added explicit handoffs from the entry skills to `start-project` and `start-task` while preserving the three core workflows.
+- Added project-local Skill UI metadata and kept the entry skills explicitly invoked.
+
 ## 0.2.0 - 2026-08-03
 
 - Adapted the AIHero Main Flow into the existing three-workflow Starter Kit without adding new Skills or infrastructure.

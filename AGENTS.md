@@ -15,6 +15,14 @@ These instructions apply to the Codex Engineering Starter Kit repository.
 - Do not add new rules based on one isolated incident.
 - Maintain functional changes in `development log.md`.
 
+## Requirement Entry
+
+- When a requirement is materially unclear, recommend `grill-me` for a file-free interview or `grill-with-docs` when project terminology and consequential decisions should be preserved.
+- After shared understanding is confirmed, recommend `to-spec` to create a local project definition draft or task contract.
+- Route the resulting specification to `start-project` for a new project or `start-task` for a change inside an existing project.
+- Skip the requirement-entry skills when the request is already clear, small, and safe to execute directly.
+- Keep requirement shaping separate from implementation and task review.
+
 ## Approval Required
 
 Ask before:
@@ -25,4 +33,3 @@ Ask before:
 - introducing a new Skill;
 - deleting user-created project material;
 - expanding the kit beyond project start, task start, and task review.
-

@@ -23,7 +23,11 @@ A non-expert or semi-technical user who wants Codex to help build small projects
 - A concise task contract template.
 - A concise task review template.
 - A lightweight clarify, specify, slice, implement, and review flow.
-- Three Codex skills:
+- Three optional requirement-entry skills:
+  - `grill-me`
+  - `grill-with-docs`
+  - `to-spec`
+- Three core workflow skills:
   - `start-project`
   - `start-task`
   - `review-task`
@@ -45,6 +49,7 @@ A non-expert or semi-technical user who wants Codex to help build small projects
 The kit succeeds when a user can:
 
 - understand the workflow by reading the README;
+- clarify a fuzzy requirement and preserve it as a local project draft or task contract;
 - start a small project with `PROJECT.md`, `AGENTS.md`, `README.md`, and `tasks/`;
 - create a task contract for medium or large work;
 - review completed work with evidence;

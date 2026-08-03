@@ -1,0 +1,6 @@
+interface:
+  display_name: "Grill Me"
+  short_description: "Clarify a requirement through focused questions"
+  default_prompt: "Use $grill-me to stress-test this requirement one decision at a time."
+policy:
+  allow_implicit_invocation: false

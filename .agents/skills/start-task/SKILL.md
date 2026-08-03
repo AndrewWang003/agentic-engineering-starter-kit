@@ -52,6 +52,8 @@ Do not repeat questions already answered in the conversation or repository.
 
 Synthesize the current conversation and repository evidence into the task contract. Do not restart discovery from zero.
 
+If `to-spec` already created a task contract, verify it against the live repository and reuse it. Ask only about newly discovered high-impact gaps; do not repeat the completed interview.
+
 The specification should state:
 
 - the user-visible or system-visible problem;

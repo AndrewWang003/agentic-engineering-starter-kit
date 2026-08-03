@@ -2,6 +2,20 @@
 
 ## 2026-08-03
 
+### Added three project-adapted requirement-entry Skills
+
+- Installed upstream `grill-me`, `grill-with-docs`, and `to-spec` from `mattpocock/skills` into `.agents/skills/`, then adapted them to this Starter Kit.
+- Made `grill-me` a self-contained, file-free interview that resolves one high-impact decision at a time and hands confirmed understanding to `to-spec`.
+- Made `grill-with-docs` self-contained and limited its writes to a lazily created `CONTEXT.md` glossary and user-approved ADRs under `docs/adr/`.
+- Removed runtime dependence on separate `grilling`, `domain-modeling`, and `setup-matt-pocock-skills` installations.
+- Changed `to-spec` from issue-tracker publishing to local routing: existing-project work creates or updates `tasks/<task-id>/TASK.md`; new-project work remains a Project Definition Draft until `start-project` confirms the destination.
+- Updated `start-project` and `start-task` to reuse completed entry work instead of repeating the interview.
+- Updated `AGENTS.md`, README, and project metadata so the three new Skills are the optional requirement entrance and the original three Skills remain the core project, task, and review workflows.
+- Added explicit-only UI metadata for all three entry Skills.
+- Forward-tested all three entries without writing simulation files; tightened `to-spec` so slice blockers can only reference earlier slices or `None`.
+- Changed files: `.agents/skills/grill-me/`, `.agents/skills/grill-with-docs/`, `.agents/skills/to-spec/`, `.agents/skills/start-project/SKILL.md`, `.agents/skills/start-task/SKILL.md`, `AGENTS.md`, `README.md`, `PROJECT.md`, `CHANGELOG.md`, and `development log.md`.
+- No issue tracker, dependency, script, runtime, automation, or additional hidden Skill was introduced.
+
 ### Integrated a lightweight Main Flow into the three existing Skills
 
 - Reviewed AIHero's `grill-with-docs`, `to-spec`, `to-tickets`, `implement`, `tdd`, and `code-review` Main Flow skills and adapted their clarification, specification, vertical-slice, implementation, test-feedback, and two-axis review practices.

@@ -96,6 +96,8 @@ Also state that no files will be created until:
 - the user approves the project summary;
 - the destination path is confirmed.
 
+If `to-spec` already produced a Project Definition Draft, verify and reuse it. Do not repeat questions that `grill-me` or `grill-with-docs` already resolved.
+
 ## Ask About
 
 Ask only for information needed to begin:

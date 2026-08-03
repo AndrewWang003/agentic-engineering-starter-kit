@@ -11,11 +11,12 @@ It helps with four practical habits:
 
 This kit is intentionally small. It is not a multi-agent platform, workflow engine, project management app, database, memory system, or autonomous software factory.
 
-Its task workflow follows a compact chain:
+Its full path follows a compact chain:
 
 ```text
-clarify important unknowns
-  -> specify the agreed behaviour
+shape a fuzzy requirement when needed
+  -> preserve the agreed specification
+  -> route to project or task execution
   -> split larger work into vertical slices
   -> implement and verify each slice
   -> review spec fit and project standards separately
@@ -27,11 +28,31 @@ clarify important unknowns
 - `templates/AGENTS.template.md` for project-specific Codex rules.
 - `templates/TASK.template.md` for medium and large work.
 - `templates/REVIEW.template.md` for checking finished work.
-- Three Codex skills:
+- Three optional requirement-entry skills:
+  - `grill-me`
+  - `grill-with-docs`
+  - `to-spec`
+- Three core workflow skills:
   - `start-project`
   - `start-task`
   - `review-task`
 - A minimal example project.
+
+## Start Here: Shape A Requirement
+
+The requirement-entry skills sit before the three core workflows. Invoke them explicitly when they are useful:
+
+- Use `grill-me` when the idea is fuzzy and you want a focused interview without writing files.
+- Use `grill-with-docs` when the work belongs to a known repository and confirmed terminology or consequential decisions should be preserved in `CONTEXT.md` and rare ADRs.
+- Use `to-spec` after the conversation is sufficiently aligned. It synthesizes what is already known without restarting the interview.
+
+`to-spec` routes its output by context:
+
+- an existing-project change becomes a local `tasks/<task-id>/TASK.md` draft for `start-task`;
+- a new-project idea becomes a Project Definition Draft for `start-project` until the destination is approved;
+- an explicitly requested in-chat draft remains in the conversation.
+
+These skills do not implement code. For a clear request, skip them and go directly to `start-project` or `start-task`.
 
 ## Workflow 1: Start A Project
 
@@ -164,12 +185,12 @@ The review does not automatically change global rules.
 
 ## Design Influence
 
-This lightweight flow adapts selected ideas from AIHero's [Main Flow](https://www.aihero.dev/skills): guided clarification, specification before implementation, tracer-bullet vertical slices, test-first feedback, and separate standards-versus-spec review. The Starter Kit keeps those disciplines inside three local, file-based workflows and does not require an issue tracker, plugin runtime, multi-agent setup, or extra infrastructure.
+This lightweight flow adapts selected ideas from AIHero's [Main Flow](https://www.aihero.dev/skills): guided clarification, specification before implementation, tracer-bullet vertical slices, test-first feedback, and separate standards-versus-spec review. The Starter Kit keeps three core file-based workflows and adds three optional requirement-entry skills without requiring an issue tracker, plugin runtime, multi-agent setup, or extra infrastructure.
 
 | Main Flow skill | Starter Kit adaptation |
 | --- | --- |
-| `grill-with-docs` | Repository-first clarification, one high-impact decision at a time, and consistent domain terms in `start-project` and `start-task`. |
-| `to-spec` | A concise specification summary, implementation decisions, scope, and stable testing interface inside the task contract. |
+| `grill-with-docs` | Installed as a self-contained entry skill that preserves confirmed terms and rare consequential decisions. |
+| `to-spec` | Installed as a local-only synthesis skill that writes a project draft or task contract without requiring a tracker. |
 | `to-tickets` | Independently verifiable vertical slices with acceptance criteria and genuine blockers, kept in one lightweight task record. |
 | `implement` | Contract-driven execution, focused checks after each slice, and a pause when new evidence materially changes the contract. |
 | `tdd` | Conditional one-behaviour-at-a-time red-green guidance that tests public behaviour with independently derived expectations. |
@@ -177,14 +198,12 @@ This lightweight flow adapts selected ideas from AIHero's [Main Flow](https://ww
 
 ## How To Use In A Real Project
 
-1. Ask Codex to use `start-project`.
-2. Complete the guided discovery conversation.
-3. Approve or correct the project summary.
-4. Confirm the project folder name and absolute destination path.
-5. Let Codex create `PROJECT.md`, `AGENTS.md`, `README.md`, and `tasks/` in that independent folder.
-6. For medium and large work, ask Codex to use `start-task` to clarify, specify, slice, and implement the change.
-7. Approve the task contract and slice breakdown before implementation.
-8. After the work is done, ask Codex to use `review-task`.
+1. For a fuzzy requirement, invoke `grill-me` or `grill-with-docs` and confirm the alignment summary.
+2. Invoke `to-spec` when the aligned conversation should become a durable project draft or task contract.
+3. For a new project, use `start-project`, approve the project summary, and confirm the absolute destination path.
+4. For work in an existing project, use `start-task` and approve the task contract and slice breakdown.
+5. Let Codex implement and verify the approved scope.
+6. After the work is done, use `review-task`.
 
 You can also copy or adapt the templates manually if you do not want the guided workflow.
 
