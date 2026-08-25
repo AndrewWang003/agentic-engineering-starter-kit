@@ -63,6 +63,13 @@ Status: Not yet defined
 
 - Status: Not yet defined
 
+## Workspace Hygiene
+
+- Pre-existing worktree state: Status: Not yet inspected
+- New durable files expected from this task: Status: Not yet defined
+- Rebuildable or temporary output expected from this task: Status: Not yet defined
+- Task-end cleanup or retention decision: Status: Not yet defined
+
 When automated tests are appropriate, specify whether the task should use a one-behaviour-at-a-time red-green loop.
 
 ## Approval-Required Situations

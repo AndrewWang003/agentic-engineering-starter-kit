@@ -23,6 +23,7 @@ A non-expert or semi-technical user who wants Codex to help build small projects
 - A concise task contract template.
 - A concise task review template.
 - A lightweight clarify, specify, slice, implement, and review flow.
+- A workspace-hygiene checkpoint for task start, commit review, and task completion.
 - Three optional requirement-entry skills:
   - `grill-me`
   - `grill-with-docs`
@@ -54,4 +55,5 @@ The kit succeeds when a user can:
 - create a task contract for medium or large work;
 - review completed work with evidence;
 - keep requirement fit separate from engineering-standard review;
+- keep durable project material distinct from rebuildable or temporary workspace output;
 - stop using the kit without damaging the real project.

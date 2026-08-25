@@ -8,6 +8,7 @@ It helps with four practical habits:
 - use a clear task contract for medium and large work;
 - keep Codex inside explicit scope and boundaries;
 - require verification evidence before calling work complete.
+- keep durable project assets distinct from rebuildable and temporary workspace output.
 
 This kit is intentionally small. It is not a multi-agent platform, workflow engine, project management app, database, memory system, or autonomous software factory.
 
@@ -19,6 +20,7 @@ shape a fuzzy requirement when needed
   -> route to project or task execution
   -> split larger work into vertical slices
   -> implement and verify each slice
+  -> inspect workspace hygiene before commit and task completion
   -> review spec fit and project standards separately
 ```
 
@@ -125,6 +127,8 @@ The task contract records:
 Each vertical slice should deliver a narrow, complete, independently verifiable behaviour. Ordinary feature work should not be split into separate frontend, backend, data, and test phases.
 
 During implementation, the approved task contract defines what to build. New evidence that materially changes it should trigger a pause and contract update. When automated tests fit the project, Codex should work one behaviour at a time through a red-green loop, testing stable public behaviour and deriving expected results independently from the implementation.
+
+For medium and large tasks, workspace hygiene is part of the workflow: inspect the initial worktree, keep scratch material outside the repository, document any durable evidence, inspect untracked files before commit, and report rebuildable output that can be safely removed at task completion. Cleanup remains an approval-required action when it deletes workspace material.
 
 Small, low-risk changes do not need the full workflow. Codex can handle them directly after inspecting the repository and stating assumptions.
 

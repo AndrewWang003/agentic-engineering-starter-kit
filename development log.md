@@ -1,5 +1,14 @@
 # Development Log
 
+## 2026-08-25
+
+### Added workspace hygiene to the standard development flow
+
+- Added explicit task-start, pre-commit, review, and task-completion file-management checkpoints.
+- Updated the core rules, project and task templates, workflow skills, README, and ignore defaults.
+- Defined durable evidence versus rebuildable output, prohibited repository-resident scratch material, and kept deletion approval-required.
+- No dependency, runtime, workflow engine, or new Skill was introduced.
+
 ## 2026-08-03
 
 ### Added three project-adapted requirement-entry Skills

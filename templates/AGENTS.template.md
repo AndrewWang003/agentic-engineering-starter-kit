@@ -25,6 +25,14 @@ Status: Not yet defined
 - Update task records for medium and large work.
 - Run relevant checks before declaring completion.
 
+## Workspace Hygiene
+
+- Inspect `git status --short --ignored` before medium or large work and before committing.
+- Keep scratch scripts, downloaded artifacts, and temporary debugging output outside the repository.
+- Keep rebuildable output, dependencies, coverage, test reports, screenshots, and system metadata ignored.
+- Store durable evidence only in a deliberate documented location; do not commit routine generated output.
+- Ask before deleting project material. At task completion, report rebuildable output that can be safely cleaned.
+
 ## Forbidden Behaviour
 
 - Do not make destructive changes without approval.

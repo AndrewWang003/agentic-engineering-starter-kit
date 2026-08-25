@@ -21,8 +21,9 @@ Check the result against the task contract and project standards on two separate
 6. Record commands and tests run, including focused and broader checks.
 7. Identify unverified behaviour, scope deviations, and remaining risks.
 8. Record lessons learned without blending them into the two review verdicts.
-9. Recommend project rule changes only when justified.
-10. Recommend a new reusable Skill only when a workflow has repeated or clearly has cross-project value.
+9. Check workspace hygiene: distinguish intentional durable files from temporary or rebuildable output, and report any cleanup candidate without deleting it.
+10. Recommend project rule changes only when justified.
+11. Recommend a new reusable Skill only when a workflow has repeated or clearly has cross-project value.
 
 ## Two-Axis Review
 

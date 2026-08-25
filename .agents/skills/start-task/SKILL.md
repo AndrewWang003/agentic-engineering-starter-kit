@@ -13,7 +13,7 @@ Turn a meaningful project change into an approved task contract, then implement 
 
 ## Procedure
 
-1. Inspect `PROJECT.md`, `AGENTS.md`, relevant repository files, tests, and task history.
+1. Inspect `PROJECT.md`, `AGENTS.md`, relevant repository files, tests, task history, and `git status --short --ignored`.
 2. Decide whether the work is small, medium, or large.
 3. For small, low-risk work, state assumptions and proceed if appropriate.
 4. For medium or large work, align on unresolved high-impact decisions.
@@ -89,6 +89,8 @@ Ask the user to approve the granularity and blockers as part of task-contract ap
 - Pause when a discovery requires a material contract change.
 - Run focused checks after each verifiable slice and the broader relevant checks at the end.
 - Record deviations that affect scope, behaviour, architecture, risk, or validation.
+- Keep scratch scripts and routine generated output outside the repository; record the intended location of any durable evidence.
+- Before committing or declaring completion, inspect untracked files and report any rebuildable output that can be safely cleaned with user approval.
 
 When automated tests are appropriate, prefer a red-green loop one behaviour at a time:
 

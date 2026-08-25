@@ -200,6 +200,10 @@ Create only the minimal project foundation:
 - `README.md`
 - `tasks/`
 
+Also establish a minimal `.gitignore` appropriate to the selected technology
+when one is missing, and explain which common rebuildable or system-generated
+files it excludes. Do not add broad ignore patterns that could hide user data.
+
 Use the templates in this kit as the starting point.
 
 The generated files must contain the actual information agreed during discovery.

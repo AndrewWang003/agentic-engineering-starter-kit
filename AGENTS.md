@@ -15,6 +15,15 @@ These instructions apply to the Codex Engineering Starter Kit repository.
 - Do not add new rules based on one isolated incident.
 - Maintain functional changes in `development log.md`.
 
+## Workspace Hygiene
+
+- At the start of a medium or large task, inspect `git status --short --ignored` and identify pre-existing changes, untracked files, and rebuildable output.
+- Keep temporary scripts, scratch files, downloaded artifacts, and ad-hoc debugging output outside the repository. Do not leave them in the project root, source tree, or test tree.
+- Keep dependencies, build output, coverage, test reports, screenshots, editor metadata, and system metadata out of version control through `.gitignore`.
+- Preserve durable evidence only in a deliberate project location such as `docs/` or `tasks/evidence/`, with enough context to explain its purpose. Do not treat routine test output as durable evidence.
+- Before committing, inspect every untracked file that would be added and remove or relocate temporary material. Do not delete user-created, contractual, architectural, fixture, or unknown files without approval.
+- At task or release completion, identify rebuildable output that can be safely cleaned. Perform cleanup only with explicit approval when it deletes material from the workspace.
+
 ## Requirement Entry
 
 - When a requirement is materially unclear, recommend `grill-me` for a file-free interview or `grill-with-docs` when project terminology and consequential decisions should be preserved.
