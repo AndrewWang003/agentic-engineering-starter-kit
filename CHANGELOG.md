@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Added `qa-planning-checkpoint` as an optional project-local skill for behavior-changing tasks.
+- Added acceptance scenario and test strategy fields to task and review templates.
+- Added `DEVELOPMENT.md` as the current project continuity file.
+
 ## 0.3.0 - 2026-08-03
 
 - Added project-adapted `grill-me`, `grill-with-docs`, and `to-spec` as optional requirement-entry skills.

@@ -24,10 +24,13 @@ A non-expert or semi-technical user who wants Codex to help build small projects
 - A concise task review template.
 - A lightweight clarify, specify, slice, implement, and review flow.
 - A workspace-hygiene checkpoint for task start, commit review, and task completion.
+- A QA planning checkpoint for behavior-changing tasks.
 - Three optional requirement-entry skills:
   - `grill-me`
   - `grill-with-docs`
   - `to-spec`
+- One optional QA checkpoint skill:
+  - `qa-planning-checkpoint`
 - Three core workflow skills:
   - `start-project`
   - `start-task`
@@ -53,6 +56,7 @@ The kit succeeds when a user can:
 - clarify a fuzzy requirement and preserve it as a local project draft or task contract;
 - start a small project with `PROJECT.md`, `AGENTS.md`, `README.md`, and `tasks/`;
 - create a task contract for medium or large work;
+- define acceptance scenarios and validation strategy before behavior-changing implementation;
 - review completed work with evidence;
 - keep requirement fit separate from engineering-standard review;
 - keep durable project material distinct from rebuildable or temporary workspace output;

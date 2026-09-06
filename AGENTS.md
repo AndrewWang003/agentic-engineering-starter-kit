@@ -13,7 +13,7 @@ These instructions apply to the Codex Engineering Starter Kit repository.
 - Run relevant checks before declaring completion.
 - Report assumptions and unverified work.
 - Do not add new rules based on one isolated incident.
-- Maintain functional changes in `development log.md`.
+- Maintain current project status in `DEVELOPMENT.md`.
 
 ## Workspace Hygiene
 
@@ -31,6 +31,13 @@ These instructions apply to the Codex Engineering Starter Kit repository.
 - Route the resulting specification to `start-project` for a new project or `start-task` for a change inside an existing project.
 - Skip the requirement-entry skills when the request is already clear, small, and safe to execute directly.
 - Keep requirement shaping separate from implementation and task review.
+
+## QA Planning
+
+- For behavior-changing tasks, use `qa-planning-checkpoint` before implementation when edge cases, acceptance scenarios, or validation strategy could change the correct solution.
+- Keep the checkpoint lightweight: acceptance scenarios, test strategy, test interface, and one approval question when needed.
+- Do not introduce Selenium, MCP, Java test generation, or any QA automation platform unless the user explicitly approves that scope.
+- Skip the checkpoint for documentation-only, typo, static text, or other low-risk changes where normal validation is sufficient.
 
 ## Approval Required
 

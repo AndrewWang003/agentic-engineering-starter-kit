@@ -19,8 +19,9 @@ Turn a meaningful project change into an approved task contract, then implement 
 4. For medium or large work, align on unresolved high-impact decisions.
 5. Synthesize the agreed request and repository evidence into a concise specification.
 6. Split multi-step work into independently verifiable vertical slices and identify blockers.
-7. Create the task contract and ask for approval before autonomous execution.
-8. Implement the approved contract, record meaningful deviations, and run risk-matched validation.
+7. For behavior-changing work, run `qa-planning-checkpoint` when acceptance scenarios, boundary cases, or validation strategy could change the correct solution.
+8. Create the task contract and ask for approval before autonomous execution.
+9. Implement the approved contract, record meaningful deviations, and run risk-matched validation.
 
 ## Unknowns-First Reference
 
@@ -62,6 +63,7 @@ The specification should state:
 - implementation decisions that materially constrain the work;
 - the stable public behaviour or interface through which the result will be tested;
 - testing decisions and comparable existing tests;
+- acceptance scenarios and test strategy when behavior correctness needs an explicit checkpoint;
 - explicit out-of-scope behaviour.
 
 Prefer an existing stable testing interface over introducing a new one. Confirm a new public interface with the user before implementation.
@@ -111,6 +113,7 @@ Expected values must come from the specification, a worked example, or another i
 - Expected behaviour
 - Specification summary
 - Testing interface
+- Acceptance scenarios and test strategy, when relevant
 - Vertical slices and blockers, when needed
 - Allowed scope
 - Forbidden scope

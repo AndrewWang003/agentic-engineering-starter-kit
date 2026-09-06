@@ -48,7 +48,7 @@ Include:
 
 Set status to `Draft` when the contract is ready for user review. Set it to `Needs clarification` when a high-impact open question prevents safe execution.
 
-After approval, hand the task contract to `start-task`. `start-task` should verify the contract against the live repository and avoid repeating completed discovery.
+After approval, hand the task contract to `start-task`. For behavior-changing tasks, recommend `qa-planning-checkpoint` before implementation when acceptance scenarios, boundary cases, or validation strategy could change the correct solution. `start-task` should verify the contract against the live repository and avoid repeating completed discovery.
 
 ## New-Project Definition Draft
 

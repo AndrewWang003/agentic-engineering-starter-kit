@@ -2,7 +2,7 @@
 
 Codex Engineering Starter Kit is a small set of Markdown templates and Codex skills for starting and managing small software projects with more structure than pure vibe coding.
 
-It helps with four practical habits:
+It helps with practical habits:
 
 - keep important project knowledge in files, not only in chat;
 - use a clear task contract for medium and large work;
@@ -18,6 +18,7 @@ Its full path follows a compact chain:
 shape a fuzzy requirement when needed
   -> preserve the agreed specification
   -> route to project or task execution
+  -> define QA scenarios when behavior correctness needs it
   -> split larger work into vertical slices
   -> implement and verify each slice
   -> inspect workspace hygiene before commit and task completion
@@ -34,6 +35,8 @@ shape a fuzzy requirement when needed
   - `grill-me`
   - `grill-with-docs`
   - `to-spec`
+- One optional QA checkpoint skill:
+  - `qa-planning-checkpoint`
 - Three core workflow skills:
   - `start-project`
   - `start-task`
@@ -55,6 +58,19 @@ The requirement-entry skills sit before the three core workflows. Invoke them ex
 - an explicitly requested in-chat draft remains in the conversation.
 
 These skills do not implement code. For a clear request, skip them and go directly to `start-project` or `start-task`.
+
+## QA Planning Checkpoint
+
+Use `qa-planning-checkpoint` once an aligned specification or task contract draft exists, and before implementation, when a behavior-changing task could pass superficial checks while still violating user intent.
+
+The checkpoint produces:
+
+- acceptance scenarios for the happy path, important boundaries, and meaningful negative or failure cases;
+- a test strategy that maps each scenario to unit, integration, browser/UI, API, manual, or skipped validation;
+- the stable test interface that should prove the behavior;
+- one approval question when a boundary or product rule cannot be safely inferred.
+
+Skip this checkpoint for documentation-only changes, typo fixes, static text edits, mechanical renames, and other low-risk work.
 
 ## Workflow 1: Start A Project
 
@@ -110,6 +126,8 @@ Use the full Unknowns-First workflow only when the lightweight pass is not enoug
 
 After alignment, Codex synthesizes what is already known into a concise specification instead of restarting the interview. Questions that can be answered from the repository should be investigated there. When user input is needed, Codex should handle one high-impact decision at a time, explain the tradeoffs, and offer a recommendation.
 
+For behavior-changing tasks, Codex should run the QA planning checkpoint before implementation when acceptance scenarios, boundary cases, or validation strategy could change the correct solution. The checkpoint should stay short enough to approve before coding.
+
 The task contract records:
 
 - background and goal;
@@ -117,6 +135,7 @@ The task contract records:
 - current and expected behavior;
 - material implementation decisions;
 - the stable behaviour or interface used for testing;
+- acceptance scenarios and test strategy when behavior correctness needs them;
 - vertical slices and genuine blockers when the work is larger than one focused change;
 - allowed and forbidden scope;
 - acceptance criteria;
@@ -195,6 +214,7 @@ This lightweight flow adapts selected ideas from AIHero's [Main Flow](https://ww
 | --- | --- |
 | `grill-with-docs` | Installed as a self-contained entry skill that preserves confirmed terms and rare consequential decisions. |
 | `to-spec` | Installed as a local-only synthesis skill that writes a project draft or task contract without requiring a tracker. |
+| QA test planning | `qa-planning-checkpoint` defines acceptance scenarios, test strategy, and approval questions without adding a QA platform. |
 | `to-tickets` | Independently verifiable vertical slices with acceptance criteria and genuine blockers, kept in one lightweight task record. |
 | `implement` | Contract-driven execution, focused checks after each slice, and a pause when new evidence materially changes the contract. |
 | `tdd` | Conditional one-behaviour-at-a-time red-green guidance that tests public behaviour with independently derived expectations. |
@@ -206,8 +226,9 @@ This lightweight flow adapts selected ideas from AIHero's [Main Flow](https://ww
 2. Invoke `to-spec` when the aligned conversation should become a durable project draft or task contract.
 3. For a new project, use `start-project`, approve the project summary, and confirm the absolute destination path.
 4. For work in an existing project, use `start-task` and approve the task contract and slice breakdown.
-5. Let Codex implement and verify the approved scope.
-6. After the work is done, use `review-task`.
+5. Use `qa-planning-checkpoint` before implementation when behavior correctness, edge cases, or validation strategy need explicit agreement.
+6. Let Codex implement and verify the approved scope.
+7. After the work is done, use `review-task`.
 
 You can also copy or adapt the templates manually if you do not want the guided workflow.
 

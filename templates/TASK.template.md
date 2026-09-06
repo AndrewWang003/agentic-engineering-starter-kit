@@ -41,6 +41,18 @@ Status: Not yet defined
 - Stable public behaviour or interface: Not yet defined
 - Comparable existing tests: Not yet defined
 
+## Acceptance Scenarios
+
+| Scenario | Given | When | Then | Priority |
+| --- | --- | --- | --- | --- |
+| Status: Not yet defined | Status: Not yet defined | Status: Not yet defined | Status: Not yet defined | Status: Not yet defined |
+
+## Test Strategy
+
+| Scenario | Validation Level | Command Or Check | Notes |
+| --- | --- | --- | --- |
+| Status: Not yet defined | Status: Not yet defined | Status: Not yet defined | Status: Not yet defined |
+
 ## Vertical Slices
 
 | Slice | Complete Behaviour | Acceptance Criteria | Blocked By | Status |

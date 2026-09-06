@@ -39,6 +39,18 @@ Status: Not yet reviewed
 | --- | --- | --- |
 | Status: Not yet defined | Not checked | Status: Not yet defined |
 
+## Acceptance Scenario Results
+
+| Scenario | Result | Evidence |
+| --- | --- | --- |
+| Status: Not yet defined | Not checked | Status: Not yet defined |
+
+## Test Strategy Fit
+
+- Planned validation covered: Status: Not yet reviewed
+- Deviations from planned validation: Status: None known
+- Untested high-risk scenarios: Status: Not yet reviewed
+
 ## Commands And Tests Run
 
 | Command or Check | Result | Notes |

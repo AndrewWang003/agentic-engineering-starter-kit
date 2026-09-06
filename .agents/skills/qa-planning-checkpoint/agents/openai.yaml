@@ -1,0 +1,6 @@
+interface:
+  display_name: "QA Planning Checkpoint"
+  short_description: "Define scenarios and validation before coding"
+  default_prompt: "Use $qa-planning-checkpoint to define acceptance scenarios, test strategy, and approval questions before implementation."
+policy:
+  allow_implicit_invocation: false
