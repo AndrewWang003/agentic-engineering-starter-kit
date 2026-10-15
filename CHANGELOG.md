@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Refreshed against `mattpocock/skills` `49dd158`: interviews now ask the decision frontier in numbered rounds with recommended answers, from one shared `grill-me/references/interview-rounds.md`.
+- Added implementation-coupled, tautological, and horizontal-slicing test anti-patterns, seam notes, and a reproduce-first rule for hard bugs.
+- Moved conditional `start-task` controls and `start-project` initialization into reference files behind explicit pointers.
+- Added a judgement-only smell baseline to the `review-task` Project Standards axis and mechanical-versus-judgement classification for lessons.
 - Added `qa-planning-checkpoint` as an optional project-local skill for behavior-changing tasks.
 - Added `show-me` as an optional project-local skill for compact visual explanations.
 - Added lightweight handoff, authorization-gate, and cross-task repair-ownership guidance adapted from applying the workflow in FillNest.

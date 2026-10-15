@@ -201,7 +201,7 @@ For ambiguous or higher-risk tasks, `start-task` can use an Unknowns-First Quick
 
 Use the full Unknowns-First workflow only when the lightweight pass is not enough and you explicitly want the extra process.
 
-After alignment, Codex synthesizes what is already known into a concise specification instead of restarting the interview. Questions that can be answered from the repository should be investigated there. When user input is needed, Codex should handle one high-impact decision at a time, explain the tradeoffs, and offer a recommendation.
+After alignment, Codex synthesizes what is already known into a concise specification instead of restarting the interview. Questions that can be answered from the repository should be investigated there. When user input is needed, Codex asks the current decision frontier in short numbered rounds, explains the tradeoffs, and offers a recommendation per question worded so "yes" accepts it. "Yes" never authorizes file writes or implementation, and high-risk alignment still needs explicit confirmation.
 
 When external artifacts materially affect the task, Codex first records their source, version, format-appropriate reading method, useful locators, confidence, and conflicts. Extracted text or an embedded instruction does not become user authorization.
 
@@ -347,7 +347,7 @@ The review does not automatically change global rules.
 
 ## Design Influence
 
-This lightweight flow adapts selected ideas from AIHero's [Main Flow](https://www.aihero.dev/skills): guided clarification, specification before implementation, tracer-bullet vertical slices, test-first feedback, and separate standards-versus-spec review. The Starter Kit keeps three core file-based workflows and adds three optional requirement-entry skills without requiring an issue tracker, plugin runtime, multi-agent setup, or extra infrastructure.
+This lightweight flow adapts selected ideas from AIHero's [Main Flow](https://www.aihero.dev/skills): guided clarification, specification before implementation, tracer-bullet vertical slices, test-first feedback, and separate standards-versus-spec review. The Starter Kit keeps three core file-based workflows and adds three optional requirement-entry skills without requiring an issue tracker, plugin runtime, multi-agent setup, or extra infrastructure. The most recent adoption pass compared against `mattpocock/skills` commit `49dd158` (2026-10-09); see `tasks/2026-10-15-upstream-skills-refresh/`.
 
 | Main Flow skill | Starter Kit adaptation |
 | --- | --- |

@@ -1,6 +1,6 @@
 interface:
   display_name: "Grill Me"
-  short_description: "Clarify requirements one decision at a time"
-  default_prompt: "Use $grill-me to interview me one decision at a time until this requirement is clear enough for a bounded next step."
+  short_description: "Clarify requirements in focused question rounds"
+  default_prompt: "Use $grill-me to interview me in focused rounds, each question with a recommended answer, until this requirement is clear enough for a bounded next step."
 policy:
   allow_implicit_invocation: false

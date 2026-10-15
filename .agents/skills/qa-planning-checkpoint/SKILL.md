@@ -38,6 +38,8 @@ Map each scenario to the right validation level: unit, integration, browser/UI, 
 
 Name the stable public behavior, API, function, command, UI flow, or artifact that should be tested. Do not invent a new public interface unless the task already requires one.
 
+Prefer the highest existing seam and as few seams as possible. Give each proposed seam a one-line note on what it catches and what it misses, and confirm any new or uncertain seam with the user before tests are written there.
+
 ### Approval Question
 
 Ask one question only when a decision changes behavior, scope, risk, or validation. Include the recommended answer and the reason.
@@ -45,6 +47,7 @@ Ask one question only when a decision changes behavior, scope, risk, or validati
 ## Quality Bar
 
 - Scenarios test behavior, not implementation details.
+- No planned test is implementation-coupled (mocking internal collaborators, checking private details, or verifying through a side channel) or tautological (deriving the expected value the way the code does).
 - Expected results come from the spec, examples, domain rules, or user confirmation.
 - Ambiguities are marked as open instead of silently becoming tests.
 - Slow or expensive tests are justified by risk.
@@ -53,6 +56,7 @@ Ask one question only when a decision changes behavior, scope, risk, or validati
 ## Common Mistakes
 
 - Writing test code before the scenarios and expected results are clear.
+- Planning all tests to be written before any implementation instead of one red-green behaviour at a time.
 - Treating all validation as browser tests when unit or integration tests would prove the behavior faster.
 - Testing only happy paths.
 - Asserting internal calls instead of user-visible or system-visible outcomes.

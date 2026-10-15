@@ -23,7 +23,7 @@ The generated project contains:
 - `AGENTS.md`, `PROJECT.md`, `DEVELOPMENT.md`, and `README.md`
 - `.gitignore` and `tasks/.gitkeep`
 - `templates/` with the project, agent, development, task, and review templates
-- `.agents/skills/` with `grill-me`, `grill-mode`, `to-spec`, `qa-planning-checkpoint`, `show-me`, `start-project`, `start-task`, and `review-task`, including local references and metadata
+- `.agents/skills/` with `grill-me`, `grill-mode`, `to-spec`, `qa-planning-checkpoint`, `show-me`, `start-project`, `start-task`, and `review-task`, including local metadata and every `references/` file (`grill-me/references/interview-rounds.md`, `start-project/references/initialization.md`, `start-task/references/execution-controls.md`, `start-task/references/unknowns-first-workflow.md`, `review-task/references/smell-baseline.md`)
 
 The generated project does not contain source-kit `tasks/` history, `examples/`, `CHANGELOG.md`, `.git/`, an absolute source-kit path, or a source-kit remote. Its root instructions point only to local files, and later source-kit adoption requires an explicit task.
 

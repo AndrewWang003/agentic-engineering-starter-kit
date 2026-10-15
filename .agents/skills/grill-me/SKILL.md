@@ -1,6 +1,6 @@
 ---
 name: grill-me
-description: Interview the user one decision at a time to clarify a fuzzy requirement before specification or implementation. Use when the user explicitly asks to grill, grill me, clarify, stress-test, or sharpen an idea, plan, feature, project, or task, especially when no project documentation should be changed. Do not use when the task is already bounded, low-risk, reversible, and independently verifiable.
+description: Interview the user in focused rounds to clarify a fuzzy requirement before specification or implementation. Use when the user explicitly asks to grill, grill me, clarify, stress-test, or sharpen an idea, plan, feature, project, or task, especially when no project documentation should be changed. Do not use when the task is already bounded, low-risk, reversible, and independently verifiable.
 ---
 
 # Grill Me
@@ -13,24 +13,10 @@ Use this as the default lightweight grill skill for everyday requirement shaping
 
 ## Procedure
 
-1. Summarize the current goal, known facts, constraints, assumptions, working hypotheses, and open decisions.
-2. Inspect available files or tools for facts that can be discovered without asking the user.
-3. Build only as much of the decision tree as needed to identify the next blocking or high-impact decision.
-4. Resolve decisions in dependency order, starting with decisions that can change scope, behaviour, architecture, risk, cost, validation, or user value.
-5. Ask one question at a time and wait for the answer.
-6. For each question, explain why it matters, offer concise options with tradeoffs, recommend one option, and state what changes depending on the answer.
-7. Test vague answers with concrete examples, edge cases, or failure scenarios.
-8. Keep confirmed facts separate from assumptions and working hypotheses.
-9. Update the shared understanding as decisions resolve.
-10. Stop when remaining unknowns do not block a reliable specification or bounded next action.
-
-## Authorization Questions
-
-Authorization questions do not count as the one substantive Grill Me question for the turn.
-
-If you must ask for permission to inspect files, run a command, access a tool, change modes, or perform any action outside the current interview boundary, ask that authorization question separately and clearly. You may still ask one additional requirement-shaping question in the same response when it is concise, directly relevant, and not dependent on the authorization answer.
-
-Keep permission gating separate from requirement decisions. Do not hide scope, design, priority, or acceptance choices inside an authorization request.
+1. Read `references/interview-rounds.md` and follow it for the whole interview.
+2. Summarize the current goal, known facts, constraints, assumptions, working hypotheses, and open decisions.
+3. Inspect available files or tools for facts that can be discovered without asking the user.
+4. Ask the decision frontier in rounds until the stop condition holds.
 
 ## Completion
 

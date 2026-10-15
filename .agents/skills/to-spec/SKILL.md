@@ -21,9 +21,9 @@ Convert the current conversation and repository evidence into a durable local sp
 2. Synthesize what is already known. Do not restart the interview or repeat resolved questions.
 3. Use the project's canonical terms and respect confirmed decisions.
 4. Separate Confirmed Facts, Assumptions, Working Hypotheses, Open Questions, and Deferred Decisions.
-5. Identify the highest stable public behaviour or interface through which the result can be verified. Prefer an existing testing interface.
+5. Identify the highest stable public behaviour or interface through which the result can be verified. Prefer an existing testing interface and as few seams as possible; confirm a new seam with the user before recording it.
 6. Write the specification at the routed destination.
-7. For multi-step work, propose independently verifiable vertical slices and genuine blockers. `Blocked By` must name an earlier slice or `None`; record investigations and unresolved facts as open questions or validation prerequisites instead.
+7. For multi-step work, propose independently verifiable vertical slices and genuine blockers. When a small preparatory refactor would make later slices easier, propose it as its own first slice. `Blocked By` must name an earlier slice or `None`; record investigations and unresolved facts as open questions or validation prerequisites instead.
 8. Report the output path or in-chat result and recommend the correct execution handoff.
 
 ## Existing-Project Task Specification

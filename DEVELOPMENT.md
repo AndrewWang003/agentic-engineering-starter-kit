@@ -23,12 +23,15 @@ The Codex Engineering Starter Kit is a lightweight, file-based, portable workflo
 - Added workspace hygiene guidance for task start, commit review, and task completion.
 - Added bundled task authorization, automatic post-implementation review, and explicit User-or-Agent acceptance authority for fully executable and observable work.
 - Defined this repository as a portable source kit and added the managed-project manifest, local workflow package contract, source preflight, and independent-project regression scenario.
+- Refreshed selected practices from `mattpocock/skills` `49dd158` (task `2026-10-15-upstream-skills-refresh`, acceptance pending): frontier-round interviews, shared interview reference, test anti-patterns, progressive disclosure for `start-task` and `start-project`, and a review smell baseline.
 
 ## Key Decisions
 
 - Keep this kit file-based and removable.
 - Do not add a multi-agent runtime, workflow engine, database, web UI, or QA automation platform.
 - Keep three core workflows only: project start, task start, and task review.
+- Interviews ask the decision frontier in numbered rounds; "yes" accepts recommendations but never authorizes action, and high-risk alignment still needs explicit confirmation.
+- Keep always-on safety rules in `AGENTS.md`; move only conditional Skill sections into `references/` behind pointers with trigger conditions.
 - Treat `.agents/skills/` as the repository-local source of truth; a new Agent must read the applicable local Skill even when machine-global Skills are unavailable.
 - Treat requirement shaping, visual explanation, QA planning, handoff authority, and cross-task repair ownership as lightweight checkpoints around the core workflows.
 - Treat source-evidence intake and risk-delivery controls as conditional checkpoints inside the existing task lifecycle, not new workflows or infrastructure.

@@ -24,14 +24,14 @@ Check the result against the task contract and project standards on two separate
 9. Check the risk and delivery profile: tier, base state, proportional isolation, triggered security validation, stop conditions, and human-controlled delivery when required.
 10. Check each recorded slice checkpoint against its focused validation, diff ownership, and commit reference or verified-but-uncommitted status.
 11. Check whether fixes affect another task or accepted behaviour boundary, and whether the owning task contract or a bounded addendum records that scope.
-12. Separately review `Project Standards` against repository instructions, established patterns, maintainability, and relevant safety constraints.
+12. Separately review `Project Standards` against repository instructions, established patterns, maintainability, and relevant safety constraints, plus the judgement-only smell baseline in `references/smell-baseline.md` for code changes.
 13. Record commands and tests run, including focused, broader, and risk-triggered security checks.
 14. Identify unverified behaviour, scope deviations, and remaining risks.
 15. Record lessons learned without blending them into the two review verdicts.
 16. Check workspace hygiene: distinguish intentional durable files from temporary or rebuildable output, and report any cleanup candidate without deleting it.
 17. Produce a detailed manual acceptance handoff for user-visible or system-visible behaviour that needs human confirmation.
 18. Apply the task contract's acceptance authority: accept only when Agent authority is explicit and all evidence conditions are satisfied; otherwise leave acceptance pending for the user.
-19. Recommend project rule changes only when justified.
+19. Recommend project rule changes only when justified, and classify each lesson first: a mechanical mistake (a fixed pattern, banned API, or file-location rule) points to an automated check, which needs user approval before any script or automation is added; a judgement call points to project standards. Keep `AGENTS.md` additions to rules every task needs, and do not add a rule from one isolated incident.
 20. Recommend a new reusable Skill only when a workflow has repeated or clearly has cross-project value.
 
 ## Two-Axis Review
@@ -46,7 +46,11 @@ Ask whether the change implements the approved task contract completely and only
 
 Ask whether the change follows `AGENTS.md`, repository conventions, existing architecture, test patterns, and maintainability expectations. Treat general code-quality heuristics as judgement, while explicit project rules take precedence.
 
+The smell baseline is one of those general heuristics: report each smell as a possible issue, never a hard violation.
+
 Do not combine both axes into one score that lets success on one hide failure on the other.
+
+When the harness supports isolated reviewers, the two axes may be reviewed in separate contexts so neither biases the other; otherwise finish `Spec Fit` before starting `Project Standards`. Report the worst finding within each axis rather than ranking across axes.
 
 ## Output
 

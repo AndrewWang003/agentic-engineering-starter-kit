@@ -26,22 +26,12 @@ Do not use Grill Mode when the task is already bounded, low-risk, reversible, an
 
 ## Interview Procedure
 
-1. Summarize the current goal, user value, constraints, assumptions, working hypotheses, and open decisions.
-2. Build only as much of the decision tree as needed to identify the next blocking or high-impact decision.
-3. Resolve decisions in dependency order, starting with decisions that can change scope, behaviour, architecture, risk, cost, validation, permission boundaries, or user value.
-4. Ask one question at a time and wait for the answer.
-5. For each question, explain why it matters, offer concise options with tradeoffs, recommend one option, and state what changes depending on the answer.
-6. Test vague or conflicting answers with concrete scenarios, edge cases, failure cases, or project evidence.
-7. Update the shared understanding after each consequential decision.
-8. Stop when remaining unknowns do not block a reliable specification, task contract, or project definition.
+1. Read `.agents/skills/grill-me/references/interview-rounds.md` and follow it for the whole interview, including its authorization-question rules.
+2. Summarize the current goal, user value, constraints, assumptions, working hypotheses, and open decisions.
+3. Ask the decision frontier in rounds. Test vague or conflicting answers against project evidence as well as concrete scenarios.
+4. Update the shared understanding after each consequential decision, and stop when the stop condition holds for a reliable specification, task contract, or project definition.
 
-## Authorization Questions
-
-Authorization questions do not count as the one substantive Grill Mode question for the turn.
-
-If you must ask for permission to inspect files, write documentation, create an ADR, run a command, access a tool, change modes, or perform any action outside the current interview boundary, ask that authorization question separately and clearly. You may still ask one additional requirement-shaping question in the same response when it is concise, directly relevant, and not dependent on the authorization answer.
-
-Keep permission gating separate from requirement decisions. Do not hide scope, design, priority, acceptance, or documentation decisions inside an authorization request.
+Requests to write documentation, create an ADR, or change modes are authorization questions, never part of a round.
 
 ## Documentation Mode
 
