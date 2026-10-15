@@ -1,0 +1,6 @@
+interface:
+  display_name: "Show Me"
+  short_description: "Explain with compact visual structures"
+  default_prompt: "Use $show-me to explain this with a compact diagram, tree, flow, or diff-shaped sketch."
+policy:
+  allow_implicit_invocation: false

@@ -1,6 +1,0 @@
-interface:
-  display_name: "Grill with Docs"
-  short_description: "Clarify requirements and preserve decisions"
-  default_prompt: "Use $grill-with-docs to clarify this requirement and preserve agreed terms and decisions."
-policy:
-  allow_implicit_invocation: false

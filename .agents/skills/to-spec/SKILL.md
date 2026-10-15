@@ -1,6 +1,6 @@
 ---
 name: to-spec
-description: Synthesize an already-discussed requirement into a local project definition draft or task contract without restarting the interview. Use after grill-me, grill-with-docs, or another sufficiently detailed conversation when the user wants a durable specification before project or task execution.
+description: Synthesize an already-discussed requirement into a local project definition draft or task contract without restarting the interview. Use after grill-me, grill-mode, or another sufficiently detailed conversation when the user wants a durable specification before project or task execution.
 ---
 
 # To Spec
@@ -67,7 +67,7 @@ Hand the draft to `start-project` for approval and destination confirmation.
 
 ## Open Questions
 
-Do not invent missing decisions. Record non-blocking unknowns honestly. When a high-impact unknown blocks a reliable specification, stop with `Needs clarification` and recommend returning to `grill-me` or `grill-with-docs`.
+Do not invent missing decisions. Record non-blocking unknowns honestly. When a high-impact unknown blocks a reliable specification, stop with `Needs clarification` and recommend returning to `grill-me` or `grill-mode`.
 
 ## Boundaries
 

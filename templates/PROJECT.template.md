@@ -16,6 +16,15 @@ Status: Not yet defined
 
 Status: Not yet defined
 
+## Demo Decision
+
+- Demo needed: Yes | No | Deferred
+- Question the Demo should answer: Status: Not applicable or not yet defined
+- Type: Visual | Interactive | Technical spike | Not applicable
+- Data: Fake | Sample | Real | Not applicable
+- Disposition: Throwaway | Production seed | Not applicable
+- Deliberately excluded behaviour: Status: Not applicable or not yet defined
+
 ## Inputs
 
 - Status: Not yet defined

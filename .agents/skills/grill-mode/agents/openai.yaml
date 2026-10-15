@@ -1,0 +1,6 @@
+interface:
+  display_name: "Grill Mode"
+  short_description: "Escalated interview for risky requirements"
+  default_prompt: "Use $grill-mode to stress-test this unclear or high-impact requirement before specification or implementation."
+policy:
+  allow_implicit_invocation: false

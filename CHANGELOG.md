@@ -3,8 +3,17 @@
 ## Unreleased
 
 - Added `qa-planning-checkpoint` as an optional project-local skill for behavior-changing tasks.
+- Added `show-me` as an optional project-local skill for compact visual explanations.
+- Added lightweight handoff, authorization-gate, and cross-task repair-ownership guidance adapted from applying the workflow in FillNest.
+- Clarified task state fields, `DEVELOPMENT.md` update boundaries, explanatory HTML exceptions, and P0/P1/P2 review closure.
+- Added conditional source-and-evidence intake guidance that preserves provenance, separates extraction from interpretation and authority, and escalates consequential uncertainty.
+- Added a proportional risk-and-delivery gate covering risk tiers, optional isolation, security-validation triggers, repair-stop conditions, and human-controlled delivery.
+- Refined project initialization with a conditional Demo decision, tool-and-observability readiness, a `DEVELOPMENT.md` foundation template, and an approved Git baseline.
+- Added authorized checkpoint commits after complete verified vertical slices and a localized manual acceptance checklist and test guide.
 - Added acceptance scenario and test strategy fields to task and review templates.
 - Added `DEVELOPMENT.md` as the current project continuity file.
+- Added bundled task authorization, automatic post-implementation review, and explicit User-or-Agent acceptance authority for fully observable work.
+- Added portable source-kit bootstrap guidance, managed-project identity, and local workflow-package initialization rules.
 
 ## 0.3.0 - 2026-08-03
 

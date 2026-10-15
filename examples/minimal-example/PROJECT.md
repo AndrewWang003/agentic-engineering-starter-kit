@@ -16,6 +16,11 @@ A single user cleaning up personal notes.
 
 Accept pasted Markdown and return cleaner Markdown.
 
+## Demo Decision
+
+- Demo needed: No
+- Reason: The first interface is still undecided, and a Demo would not yet resolve the blocking product decision.
+
 ## Inputs
 
 - Pasted Markdown text.
