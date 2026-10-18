@@ -32,6 +32,14 @@ shape a fuzzy requirement when needed
   -> hand the user a localized manual QA guide
 ```
 
+## Why I Built This
+
+I build my own projects with AI coding agents (Codex and Claude). I design the system, write the requirements, and review and test the result; the agents write most of the code.
+
+Without a clear process, an agent can drift outside the agreed scope, call a task "done" without real evidence, or lose important decisions when a chat ends. This kit is the process I use to stop that: requirements and decisions live in files, each meaningful task gets a written contract, work is split into small verified steps, and a task is only complete when there is evidence.
+
+I refined it while building FillNest, a browser extension. The `tasks/` folder keeps real task contracts and reviews from building this kit.
+
 ## What Is Included
 
 - `templates/PROJECT.template.md` for a small project foundation.
@@ -406,3 +414,7 @@ The kit is file-based and removable. A real project can stop using it by deletin
 - `tasks/`
 
 This does not damage the project's source code. There is no database, server, runtime, or hidden state to migrate.
+
+## Credits And License
+
+This kit is released under the MIT License (see `LICENSE`). Parts are adapted from [mattpocock/skills](https://github.com/mattpocock/skills) (MIT) and AIHero's Main Flow, and the review smell list comes from Martin Fowler's *Refactoring*. See `THIRD_PARTY_NOTICES.md` for what was adapted and the original licence notice.
